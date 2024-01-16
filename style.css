@@ -185,7 +185,7 @@ input::placeholder{
         min-height: 90%;
         border-radius: 1em;
         padding: 10px;
-        gap: 1rem;
+        gap: 2rem;
         padding-right: 30px;
         max-width: 50%;
     }
