@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Tip calculator app</title>
+  <script src="app.js"></script>
+  
+</head>
+<body>
+  <main>
+    <div class="logo"><img src="logo.svg" 
+      alt="">
+    </div>
+    <div class="wrapper">
+      <article class="up-left">
+        
+          <div class="bill-section">
+            <label for="">Bill</label>
+          <div class="bill-input">
+            <input type="number" placeholder="142.55" id="bill">
+            <img src="icon-dollar.svg" alt="dollar">
+          </div>
+          </div>
+          <div class="tip-section">
+            <label for="">Select Tip %</label>
+            <div class="tip-btns">
+              <button id="5percent" data-percent="5">5%</button>
+              <button id="10percent" data-percent="10">10%</button>
+              <button id="15percent" data-percent="15">15%</button>
+              <button id="25percent" data-percent="25">25%</button>
+              <button id="50percent" data-percent="50">50%</button>
+              <input type="number" placeholder="custom" id="custom">
+            </div>
+            
+          </div>
+          <div class="people-section">
+            <label for="People">Number of People</label>
+            <label for="people" class="error" id="error">Can't be zero</label>
+            <div class="people-input">
+              <input type="number" name="" class="" id="people" placeholder="5">
+              <img src="icon-person.svg" alt="person">
+            </div>
+          </div>
+        
+        
+      </article>
+      <article class="down-right">
+        
+          <div class="tip-each">
+            <p>Tip Amount <br><span>/ person</span></p>
+            <h2 id="tip-each">$4.27</h2>
+          </div>
+          <div class="tip-total">
+            <p>Total <br><span>/ person</span></p>
+            <h2 id="total-tip">$32.79</h2>
+          </div>
+          <button class="Reset-btn" id="resetBtn">Reset</button>
+        
+      </article>
+      
+
+    </div>
+  </main>
+  </div>
+  <script src="/app.js"></script>
+  
+</body>
+</html>

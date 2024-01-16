@@ -1,0 +1,401 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Space Mono', monospace;
+    background-color: hsl(185, 41%, 84%);
+    width: 100vw;
+    height: 100vh;
+    font-weight: 700;
+    
+}
+.wrapper{
+    background-color: hsl(0, 0%, 100%);
+    max-width: 98vw;
+    height: 90vh;
+    border-radius: 15px 15px 0 0 ;
+    padding: 1rem;
+}
+.logo img{
+    margin: 20px auto;
+    display: flex;
+    align-self: center;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    font-family: 'Space Mono', monospace;
+}
+.up-left{
+    background-color: hsl(0, 0%, 100%);
+    gap: 2rem;
+    width: 100%;
+}
+.up-left label{
+    font-size: 14px;
+    color: hsl(186, 14%, 43%);
+    gap: 0.5rem;
+    
+}
+input::placeholder{
+    color: hsl(183, 100%, 15%);
+    font-family: 'Space Mono', monospace;
+}
+
+.bill-input, .people-input{
+    position: relative;
+    width: full;
+}
+.bill-input input,
+.people-input input{
+    background-color: hsl(189, 41%, 97%);
+    border: 0;
+    height: 30px;
+    min-width: 95%;
+    text-align: right;
+    font-size: 1.2rem;
+    color: hsl(183, 100%, 15%);
+    font-family: 'Space Mono', monospace;
+}
+.bill-input img, .people-input img{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+} 
+.tip-btns{
+    display: block;
+    max-width: 100%;
+    gap : 1rem;
+}
+.tip-btns button{
+    width: 48%;
+    color: white;
+    background-color: hsl(183, 100%, 15%);
+    border: none;
+    padding: .5rem;
+    cursor: pointer;
+    border-radius: 7px;
+    font-size: 1.1rem;
+    margin-top: .6rem;
+    font-family: 'Space Mono', monospace;
+}
+.tip-btns button:hover{
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+.tip-btns input{
+    width: 43%;
+    text-align: right;
+    font-size: 1rem;
+    padding: 0.3rem;
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 7px;
+    color: hsl(183, 100%, 15%);
+    font-family: 'Space Mono', monospace;
+}
+ input:focus{
+    border: 2px solid hsl(183, 100%, 15%);
+    border-radius: 8px;
+    outline: none
+}
+.tip-btns input:focus{
+    border: 2px solid hsl(183, 100%, 15%);
+    border-radius: 8px;
+}
+.people-section .error{
+    display: none;
+    color: red;
+    float: right;
+    font-size: 10px;
+}
+.down-right{
+    background-color: hsl(183, 100%, 15%);
+    gap: 2rem;
+    width: 90%;
+    margin-top: 1em;
+    border-radius: 15px;
+    padding: 1em;
+    font-family: 'Space Mono', monospace;
+
+}
+.tip-each, .tip-total{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: hsl(172, 67%, 45%);
+}
+.tip-each p, .tip-total p{
+    color: hsl(185, 41%, 84%);
+}
+.tip-each span, .tip-total span{
+    color: hsl(185, 41%, 84%);
+    font-size: 10px;
+}
+.down-right button{
+    background-color: hsl(172, 67%, 45%);
+    border: none;
+    border-radius: 4px;
+    width: 90%;
+    height: 35px;
+    align-self: center;
+    font-weight: 700;
+    cursor: pointer;
+    opacity: 60%;
+    margin-top: 50px;
+    font-family: 'Space Mono', monospace;
+
+
+}
+.down-right button:hover{
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    opacity: 100%;
+}
+@media only screen and (min-width: 500px){
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-width: 100%;
+        max-width: 100%;
+        max-height: 100vh;
+    }
+    .logo img{
+        margin-top: 80px;
+        margin-bottom: 30px;
+    }
+    .wrapper{
+        max-width: 60%;
+        min-width: 60%;
+        max-height: 55vh;
+        display: flex;
+        flex-direction: row;
+        border-radius: 1em;
+        padding: 1em;
+        margin: 0 auto;
+    }
+    .up-left{
+        display: flex;
+        flex-direction: column;
+        min-height: 90%;
+        border-radius: 1em;
+        padding: 10px;
+        gap: 1rem;
+        padding-right: 30px;
+        max-width: 50%;
+    }
+    .tip-btns{
+        width: 100%;
+        gap : 1rem;
+    }
+    .tip-btns button{
+    max-width: 30%;
+    color: white;
+    background-color: hsl(183, 100%, 15%);
+    border: none;
+    padding: .5rem;
+    cursor: pointer;
+    border-radius: 7px;
+    font-size: 1.1rem;
+
+    }
+    .tip-btns input{
+        width: 25%;
+        text-align: right;
+        font-size: 1rem;
+        padding: 0.3rem;
+        border: none;
+        background-color: hsl(189, 41%, 97%);
+        border-radius: 7px;
+        color: hsl(183, 100%, 15%);
+        font-family: 'Space Mono', monospace;
+    }
+    
+  }
+
+  
+/* 
+
+display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+.wrapper{
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 50vw;
+    height: 50vh;
+    border-radius: 1em;
+    padding: 1em;
+    margin: 0 auto;
+}
+.logo img{
+    padding: 2em;
+    display: block;
+    margin-left: 40%;
+    margin-right: auto;
+}
+.left{
+    float: left;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    min-height: 90%;
+    border-radius: 1em;
+    padding: 10px;
+    gap: 2rem;
+    padding-right: 30px;
+}
+label{
+    font-size: 14px;
+    color: hsl(183, 100%, 15%);
+}
+.left img{
+    width: 15px;
+    height: 15px;
+    display: inline-flex;
+}
+.bill-section, .tip-section, .people-section{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.input-section{
+    gap: 2 rem;
+}
+
+.bill-input,.people-input{
+    position: relative;
+}
+.bill-input input,
+.people-input input{
+    background-color: hsl(189, 41%, 97%);
+    border: 0;
+    height: 30px;
+    width: 100%;
+    text-align: right;
+    font-size: 1.2rem;
+    color: hsl(183, 100%, 15%);
+}
+
+input:focus{
+    border-color: hsl(172, 67%, 45%); 
+}
+.bill-input img, .people-input img{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+} 
+.tip-btns{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap : 1rem;
+}
+.tip-btns button{
+    width: 95px;
+    color: white;
+    background-color: hsl(183, 100%, 15%);
+    border: none;
+    padding: .5rem;
+    cursor: pointer;
+    border-radius: 7px;
+    font-size: 1.1rem;
+}
+.tip-btns button:hover{
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+.tip-btns input{
+    width: 80px;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 7px;
+    color: hsl(183, 100%, 15%);
+}
+.tip-btns input:hover{
+    border-color: hsl(183, 100%, 15%);
+}
+.error{
+    color: rgb(247, 51, 51);
+    
+    display: none;
+}
+.right{
+    float: right;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    
+    gap: 2rem;
+    min-height: 85%;
+    border-radius: 1em;
+    padding: 20px 10px;
+    background-color: hsl(183, 100%, 15%);
+}
+
+.right button{
+    background-color: hsl(172, 67%, 45%);
+    border: none;
+    border-radius: 4px;
+    width: 90%;
+    height: 25px;
+    align-self: center;
+    font-weight: 700;
+    cursor: pointer;
+    opacity: 60%;
+    margin-top: 70px;
+}
+.right button:hover{
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    opacity: 100%;
+}
+.tip-each, .tip-total{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tip-each h2, .tip-total h2{
+    color: hsl(172, 67%, 45%);
+}
+.tip-each span, .tip-total span{
+    color: hsl(185, 41%, 84%);
+    font-size: 12px;
+}
+@media screen and ( max-width:750px){
+    body{
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 2rem;
+        gap: 0;
+    }
+    .left, .right{
+        width: 100%;
+        gap: 0;
+    }
+    .left{
+        width: 100%;
+        margin-top: auto;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .tip-btns{
+        flex-direction: row;
+        justify-content: space-between;    
+    }
+
+}
