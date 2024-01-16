@@ -1,3 +1,40 @@
+# Tip Calculator App
+Welcome to the Tip Calculator App! This simple web application allows you to calculate the tip amount and total bill per person based on the bill amount, selected tip percentage, and the number of people sharing the bill.
+
+# Getting Started
+To use the Tip Calculator, simply open the index.html file in a web browser. You can also deploy the app on a web server for online access.
+
+
+# Usage
+Enter the bill amount in the "Bill" section.
+Choose a predefined tip percentage by clicking on the buttons in the "Select Tip %" section, or enter a custom tip percentage in the provided input.
+Input the number of people sharing the bill in the "Number of People" section.
+The app will automatically calculate and display the tip amount per person and the total amount per person.
+Features
+Responsive design for optimal viewing on various devices.
+Options to select predefined tip percentages (5%, 10%, 15%, 25%, 50%) or enter a custom tip percentage.
+Immediate updates and calculations as you input values.
+
+
+Customization
+Feel free to customize the app by modifying the HTML, CSS, and JavaScript files according to your preferences. You can change the styling, add new features, or improve the user interface.
+
+Contributing
+If you would like to contribute to this project, please follow the standard GitHub workflow:
+
+Fork the repository
+Create a new branch (git checkout -b feature/your-feature)
+Make changes and commit (git commit -m 'Add your feature')
+Push to the branch (git push origin feature/your-feature)
+Create a pull request
+License
+This project is licensed under the MIT License.
+
+Acknowledgments
+Special thanks to Google Fonts for providing the Space Mono font.
+Icons sourced from FontAwesome.
+Feel free to reach out for any questions or improvements. Happy calculating! 🌟
+
 # Frontend Mentor - Tip calculator app
 
 ![Design preview for the Tip calculator app coding challenge](./design/desktop-preview.jpg)
